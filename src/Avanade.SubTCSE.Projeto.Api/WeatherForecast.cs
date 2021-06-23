@@ -1,6 +1,6 @@
 using System;
 
-namespace Avanade.SubTCSE.Projeto.API
+namespace Avanade.SubTCSE.Projeto.Api
 {
     public class WeatherForecast
     {

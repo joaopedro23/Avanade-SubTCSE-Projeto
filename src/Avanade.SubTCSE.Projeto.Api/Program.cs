@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Avanade.SubTCSE.Projeto.API
+namespace Avanade.SubTCSE.Projeto.Api
 {
     public class Program
     {

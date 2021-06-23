@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Avanade.SubTCSE.Projeto.API.Controllers
+namespace Avanade.SubTCSE.Projeto.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
