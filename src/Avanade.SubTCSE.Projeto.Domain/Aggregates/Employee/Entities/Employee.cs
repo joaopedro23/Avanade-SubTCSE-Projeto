@@ -4,22 +4,23 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.Employee.Entities
 {
     public record Employee : BaseEntity<string>
     {
-        public Employee(string firsName, 
-            string surName, 
-            DateTime birthday, 
-            bool active, 
+        public Employee(
+            string firstName,
+            string surName,
+            DateTime birthday,
+            bool active,
             decimal salary,
             EmployeeRole.Entities.EmployeeRole employeeRole)
         {
-            FirsName = firsName;
+            FirstName = firstName;
             SurName = surName;
             Birthday = birthday;
             Active = active;
             Salary = salary;
-            this.employeeRole = employeeRole;
+            EmployeeRole = employeeRole;
         }
 
-        public string FirsName { get; init; }
+        public string FirstName { get; init; }
 
         public string SurName { get; init; }
 
@@ -29,6 +30,6 @@ namespace Avanade.SubTCSE.Projeto.Domain.Aggregates.Employee.Entities
 
         public decimal Salary { get; init; }
 
-        public EmployeeRole.Entities.EmployeeRole employeeRole { get; init; } 
+        public EmployeeRole.Entities.EmployeeRole EmployeeRole { get; init; }
     }
 }
