@@ -1,7 +1,7 @@
 ﻿using Avanade.SubTCSE.Projeto.Domain.Base.Repository.MongoDB;
 using MongoDB.Driver;
 
-namespace Avanade.SubTCSE.Projeto.Data.Repositories.Base.MongoDB
+namespace Avanade.SubTCSE.Projeto.Infra.Data.Repositories.Base.MongoDB
 {
     public class MongoDBContext : IMongoDBContext
     {
@@ -21,12 +21,11 @@ namespace Avanade.SubTCSE.Projeto.Data.Repositories.Base.MongoDB
             MongoClient mongoClient = new MongoClient(settings: mongoClientSettings);
 
             _mongoDatabase = mongoClient.GetDatabase("");
-
         }
 
-        public IMongoCollection<TEntity> GetCollection<TEntity>(string Collection)
+        public IMongoCollection<TEntity> GetCollection<TEntity>(string collection)
         {
-            return _mongoDatabase.GetCollection<TEntity>(name: Collection);
+            return _mongoDatabase.GetCollection<TEntity>(name: collection);
         }
     }
 }
